@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center>
+        <div id="name-section">
+
+            <h2><label for="playerName">Fill the form and start the game: </label></h2>
+            <h1>🎮⭐🎯🎮</h1>
+            <h1><input type="text" id="playerName" placeholder="Your Name"></h1>
+            <h1><input type="text" id="playerSurName" placeholder="Your SurName  "></h1>
+            <h3><button id="startButton" onclick="startGame()">Start Game</button></h3>
+            <p id="nameError" style="color: red; display: none;">Please enter your Full name to start the game!</p>
+        </div>
+
+        <div id="game-section" style="display:none;">
+
+        <h1>TecTakToe</h1><br><br>
+
+        <div id="board">
+            <div id="cell1" class="cell"></div>
+            <div id="cell2" class="cell"></div>
+            <div id="cell3" class="cell"></div>
+            <div id="cell4" class="cell"></div>
+            <div id="cell5" class="cell"></div>
+            <div id="cell6" class="cell"></div>
+            <div id="cell7" class="cell"></div>
+            <div id="cell8" class="cell"></div>
+            <div id="cell9" class="cell"></div>
+        </div>
+    
+        <div id="result"></div>
+        <button onclick="restart()">Restart Game</button>
+
+        
+    </center>
+    
+    <script src="script.js"></script>
+</body>
+</html>

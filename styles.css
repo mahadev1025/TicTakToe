@@ -1,0 +1,89 @@
+h2{
+  text-decoration: underline;
+    text-shadow: 2px 2px 5px #f7a413;
+}
+
+h1{
+    font: size 5rem;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px #f7a413;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8dbb47b; /* Optional background color */
+}
+/* Board styles */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    box-shadow: 0 0 20px 10px red;
+    gap: 5px;
+}
+
+/* Cell styles */
+.cell {
+    
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    box-shadow: 0 0 5px 5px rgb(90, 83, 86);
+    cursor: pointer;
+}
+.cell:hover {
+    background-color: #e7a3ef;
+}
+
+/* Result message */
+#result {
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+
+/* Restart button */
+button {
+    margin-top: 20px;
+    background-color: rgb(205, 246, 23);
+}
+
+button:hover {
+    background-color: #10c5e5;
+}
+
+/* Style for the game board */
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Adjust cell width */
+    grid-template-rows: repeat(3, 100px); /* Adjust cell height */
+    gap: 5px; /* Space between cells */
+    transition: transform 1s ease-in-out; /* Smooth transition for transform */
+  }
+  
+
+  /* Rotation animation keyframes */
+  @keyframes rotateGrid {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg); /* One full rotation */
+    }
+  }
+  
+  /* Class that applies the rotation */
+  .rotate {
+    animation: rotateGrid 1s ease-in-out; /* Apply the animation */
+  }
+  
+  
+
